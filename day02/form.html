@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORM TAG</title>
+  </head>
+  <body>
+    <h1>form tag</h1>
+    <form action="insert.html" method="get">
+      <div><input type="text" placeholder="아이디를 입력하세요." maxlength="10" name="id" /></div>
+      <div><input type="text" placeholder="아이디를 입력하세요." maxlength="10" name="id" value="jwzzang" readonly /></div>
+      <!-- 아이디 수정 안되게 하는 법 -->
+      <div><input type="password" placeholder="패스워드를 입력하세요." name="password" /></div>
+      <div><input type="number" placeholder="몇개 살거에요?" step="1" name="how much" /></div>
+      <div><input type="date" placeholder="오늘 며칠?" name="date" /></div>
+      <div><input type="email" placeholder="이메일을 입력하세요." required name="email" /></div>
+      <div>
+        <p>성별</p>
+        <!-- id tag는 모든 속성에 사용가능 -->
+        <input type="radio" name="gender" id="female" value="female" /><label for="female">여자</label> <input type="radio" name="gender" id="male" value="male" /><label for="male">남자</label>
+      </div>
+      <div>
+        <p>관심분야</p>
+        <!-- <input type="checkbox" name="" id="html"><label for="html">HTML</label>
+        <input type="checkbox" name="" id="css"><label for="css">CSS</label>
+        <input type="checkbox" name="" id="js"><label for="js">JS</label>
+        <input type="checkbox" name="" id="node"><label for="node">Node</label>
+        <input type="checkbox" name="" id="react"><label for="react">React</label> -->
+        <label><span>HTML</span><input type="checkbox" name="favorite" checked /></label>
+        <label><span>CSS</span><input type="checkbox" name="favorite" /></label>
+        <label><span>JS</span><input type="checkbox" name="favorite" /></label>
+        <label><span>Node</span><input type="checkbox" name="favorite" /></label>
+        <label><span>React</span><input type="checkbox" name="favorite" /></label>
+        <!-- 하나만 고를땐 radio 여러개는 checkbox -->
+        <select name="grade" id="">
+          <option value="">학력을 선택해 주세요.</option>
+          <option value="1">중졸</option>
+          <option value="2">고졸</option>
+          <option value="3">대졸</option>
+        </select>
+      </div>
+      <div><textarea name="contents" id="" cols="30" rows="10"></textarea></div>
+      <div><input type="file" name="profile" id="" /></div>
+      <div>
+        <button>전송</button>
+      </div>
+    </form>
+  </body>
+</html>

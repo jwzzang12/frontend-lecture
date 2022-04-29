@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>마마쥬</title>
+    <style>
+      caption {
+        text-align: left;
+      }
+      table {
+        margin-bottom: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="insert.html" method="get">
+      <table border="1" width="1000px">
+        <tbody>
+          <tr>
+            <td>회원구분</td>
+            <td>
+              <input type="radio" name="member" id="personal" value="personal" /><label for="personal">개인회원</label>
+              <input type="radio" name="member" id="business" value="business" /><label for="business">사업자회원</label>
+              <input type="radio" name="member" id="foreigner" value="foreigner" /><label for="foreigner">외국인회원(foreigner)</label>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <table border="1" width="1000px">
+        <caption>
+          기본정보
+        </caption>
+        <tbody>
+          <tr>
+            <td>아이디</td>
+            <td><input type="text" placeholder="" minlength="4" maxlength="16" name="id" />(영문소문자/숫자,4~16자)</td>
+          </tr>
+          <tr>
+            <td>비밀번호</td>
+            <td>
+              <input type="password" placeholder="" minlength="10" maxlength="16" name="password" />(영문 대소문자/숫자/특수문자 중 2가지 이상
+              조합,10자~16자)
+            </td>
+          </tr>
+          <tr>
+            <td>비밀번호 확인</td>
+            <td>
+              <input type="password" placeholder="" minlength="10" maxlength="16" name="password" />
+            </td>
+          </tr>
+          <tr>
+            <td>비밀번호 확인 질문</td>
+            <td>
+              <select name="question" id="">
+                <option value="">기억에 남는 추억의 장소는?</option>
+                <option value="1">자신의 인생 좌우명은?</option>
+                <option value="2">자신의 보물 제 1호는?</option>
+                <option value="3">인상 깊게 읽은 책 이름은?</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>비밀번호 확인 답변</td>
+            <td><input type="text" placeholder="" name="answer" /></td>
+          </tr>
+          <tr>
+            <td>이름</td>
+            <td><input type="text" placeholder="" name="name" /></td>
+          </tr>
+          <tr>
+            <td>주소</td>
+            <td>
+              <input type="text" placeholder="" name="address" />
+              <input type="button" value="우편번호" /><br />
+              <input type="text" placeholder="" name="address" />기본주소<br />
+              <input type="text" placeholder="" name="address" />나머지주소
+            </td>
+          </tr>
+          <tr>
+            <td>일반전화</td>
+            <td>
+              <select name="phonenumber" id="">
+                <option value="">02</option>
+                <option value="1">031</option>
+              </select>
+              - <input type="text" name="middle" id="" /> - <input type="text" name="last" id="" />
+            </td>
+          </tr>
+          <tr>
+            <td>휴대전화</td>
+            <td>
+              <select name="mobilephone" id="">
+                <option value="">010</option>
+                <option value="1">011</option>
+              </select>
+              - <input type="text" name="middle" id="" /> - <input type="text" name="last" id="" />
+            </td>
+          </tr>
+          <tr>
+            <td>SMS 수신여부</td>
+            <td>
+              <label>
+                <input type="checkbox" name="agreed" id="" />
+                <span>동의함</span><br />
+              </label>
+              <p>쇼핑몰에서 제공하는 유익한 이벤트 소식을 SMS로 받으실 수 있습니다.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>이메일</td>
+            <td>
+              <input type="email" placeholder="" name="email" required />
+            </td>
+          </tr>
+          <tr>
+            <td>이메일 수신여부</td>
+            <td>
+              <label>
+                <input type="checkbox" name="agreed" id="" />
+                <span>동의함</span><br />
+              </label>
+              <p>쇼핑몰에서 제공하는 유익한 이벤트 소식을 이메일로 받으실 수 있습니다.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <table border="1" width="1000px">
+        <caption>
+          추가정보
+        </caption>
+        <tbody>
+          <tr>
+            <td>생년월일</td>
+            <td>
+              <input type="text" name="year" id="" />년 <input type="text" name="month" id="" />월 <input type="text" name="day" id="" />일
+              <input type="radio" name="birthday" id="solar" value="solar" checked /><label for="solar">양력</label>
+              <input type="radio" name="birthday" id="lunar" value="lunar" /><label for="lunar">음력</label>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h4>이용약관 동의</h4>
+      <div style="border-style: double; width: 1000px; height: 200px; line-height: 1em; overflow: auto; padding: 10px; margin-bottom: 50px">
+        <p>
+          제1조(목적)<br />이 약관은 (주)와이케이무역 (전자상거래 사업자)가 운영하는 마마쥬 몰(이하 “몰”이라 한다)에서 제공하는 인터넷 관련
+          서비스(이하 “서비스”라 한다)를 이용함에 있어 사이버 몰과 이용자의 권리.의무 및 책임사항을 규정함을 목적으로 합니다. <br />
+          ※「PC통신, 무선 등을 이용하는 전자상거래에 대해서도 그 성질에 반하지 않는 한 이 약관을 준용합니다.
+        </p>
+        <p>
+          제2조(정의)<br />① “몰”이란 OO 회사가 재화 또는 용역(이하 “재화 등”이라 함)을 이용자에게 제공하기 위하여 컴퓨터 등 정보통신설비를 이용하여
+          재화 등을 거래할 수 있도록 설정한 가상의 영업장을 말하며, 아울러 사이버몰을 운영하는 사업자의 의미로도 사용합니다.<br />② “이용자”란 “몰”에
+          접속하여 이 약관에 따라 “몰”이 제공하는 서비스를 받는 회원 및 비회원을 말합니다.<br />③ ‘회원’이라 함은 “몰”에 회원등록을 한 자로서,
+          계속적으로 “몰”이 제공하는 서비스를 이용할 수 있는 자를 말합니다.<br />④ ‘비회원’이라 함은 회원에 가입하지 않고 “몰”이 제공하는 서비스를
+          이용하는 자를 말합니다.
+        </p>
+        <p>
+          제3조 (약관 등의 명시와 설명 및 개정)<br />① “몰”은 이 약관의 내용과 상호 및 대표자 성명, 영업소 소재지 주소(소비자의 불만을 처리할 수 있는
+          곳의 주소를 포함), 전화번호.모사전송번호.전자우편주소, 사업자등록번호, 통신판매업 신고번호, 개인정보보호책임자등을 이용자가 쉽게 알 수
+          있도록 00 사이버몰의 초기 서비스화면(전면)에 게시합니다. 다만, 약관의 내용은 이용자가 연결화면을 통하여 볼 수 있도록 할 수 있습니다.<br />②
+          “몰은 이용자가 약관에 동의하기에 앞서 약관에 정하여져 있는 내용 중 청약철회.배송책임.환불조건 등과 같은 중요한 내용을 이용자가 이해할 수
+          있도록 별도의 연결화면 또는 팝업화면 등을 제공하여 이용자의 확인을 구하여야 합니다.<br />③ “몰”은 「전자상거래 등에서의 소비자보호에 관한
+          법률」, 「약관의 규제에 관한 법률」, 「전자문서 및 전자거래기본법」, 「전자금융거래법」, 「전자서명법」, 「정보통신망 이용촉진 및 정보보호
+          등에 관한 법률」, 「방문판매 등에 관한 법률」, 「소비자기본법」 등 관련 법을 위배하지 않는 범위에서 이 약관을 개정할 수 있습니다.<br />④
+          “몰”이 약관을 개정할 경우에는 적용일자 및 개정사유를 명시하여 현행약관과 함께 몰의 초기화면에 그 적용일자 7일 이전부터 적용일자 전일까지
+          공지합니다. 다만, 이용자에게 불리하게 약관내용을 변경하는 경우에는 최소한 30일 이상의 사전 유예기간을 두고 공지합니다. 이 경우 “몰“은 개정
+          전 내용과 개정 후 내용을 명확하게 비교하여 이용자가 알기 쉽도록 표시합니다.<br />⑤ “몰”이 약관을 개정할 경우에는 그 개정약관은 그 적용일자
+          이후에 체결되는 계약에만 적용되고 그 이전에 이미 체결된 계약에 대해서는 개정 전의 약관조항이 그대로 적용됩니다. 다만 이미 계약을 체결한
+          이용자가 개정약관 조항의 적용을 받기를 원하는 뜻을 제3항에 의한 개정약관의 공지기간 내에 “몰”에 송신하여 “몰”의 동의를 받은 경우에는
+          개정약관 조항이 적용됩니다.<br />⑥ 이 약관에서 정하지 아니한 사항과 이 약관의 해석에 관하여는 전자상거래 등에서의 소비자보호에 관한 법률,
+          약관의 규제 등에 관한 법률, 공정거래위원회가 정하는 전자상거래 등에서의 소비자 보호지침 및 관계법령 또는 상관례에 따릅니다.
+        </p>
+      </div>
+      <!-- <table border="1" width="1000px">
+      <caption>
+        이용약관 동의
+      </caption>
+      <tbody>
+        <tr>
+          <td>
+            <textarea name="contents" id="" cols="140" rows="10"></textarea><br />
+            <p>이용약관에 동의하십니까?</p>
+            <label
+              ><input type="checkbox" name="agreed" id="" />
+              <span>동의함</span>
+            </label>
+          </td>
+        </tr>
+      </tbody>
+    </table> -->
+      <div style="text-align: center">
+        <button>회원가입</button>
+        <button>취소</button>
+      </div>
+    </form>
+  </body>
+</html>

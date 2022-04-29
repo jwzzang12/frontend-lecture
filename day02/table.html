@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TABLE</title>
+  </head>
+  <!-- 열 tr -->
+  <body>
+    <table border="1" width="700px">
+      <thead>
+        <tr></tr>
+      </thead>
+      <caption>
+        <strong>유한양행</strong>
+      </caption>
+      <colgroup>
+        <col width="10%" />
+        <col width="40%" />
+        <col width="10%" />
+        <col width="40%" />
+      </colgroup>
+      <tbody>
+        <tr>
+          <th scope="row">기업명</th>
+          <td>유한양행</td>
+          <th scope="row">설립</th>
+          <td>1926.06.20</td>
+        </tr>
+        <tr>
+          <th scope="row">대표이사</th>
+          <td>문지원</td>
+          <th scope="row">상장일</th>
+          <td>1926.06.20</td>
+        </tr>
+        <tr>
+          <th scope="row">주소</th>
+          <td colspan="3">서울시 어쩌구 웅앵</td>
+        </tr>
+        <tr>
+          <th scope="row">전화번호</th>
+          <td colspan="3">02-1234-5678</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr />
+    <table border="1" width="700px">
+      <caption>
+        team
+      </caption>
+      <thead>
+        <tr>
+          <th scope="col">NAME</th>
+          <th scope="col">SUBJECT</th>
+          <th scope="col">MARKS</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">Hillary</td>
+          <td>Advanced Web</td>
+          <td>75</td>
+        </tr>
+        <tr>
+          <td>Operating System</td>
+          <td>60</td>
+        </tr>
+        <tr>
+          <td rowspan="2">Larry</td>
+          <td>Advanced Web</td>
+          <td>80</td>
+        </tr>
+        <tr>
+          <td>Operating System</td>
+          <td>75</td>
+        </tr>
+        <tr>
+          <td colspan="3">Total Average 72.5</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

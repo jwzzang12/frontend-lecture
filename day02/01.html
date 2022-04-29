@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 파비콘 만드는 tag -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>웹브라우저 탭 제목을 쓰는 곳</title>
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- p tag는 글자 블럭을 형성한다. 다른 block tag를 쓸 수 없다.(p tag 포함) -->
+    <!-- 사용 가능한 tag : span, strong, em, q(quotation), b(bold), i -->
+    <p>
+      &lt;p&gt;<br />
+      L &nbsp; orem ipsum dolor, sit amet consectetur adipisicing elit. At beatae corporis quaerat ipsum neque reprehenderit, molestias illo odit sunt. Saepe animi eos, pariatur magni expedita
+      blanditiis. Obcaecati, doloremque quas!
+    </p>
+    <div>
+      <h3>
+        서시
+        <span class="material-symbols-outlined"> done </span>
+      </h3>
+      <p>
+        죽는 날까지 하늘을 우러러<br />
+        한 점 부끄럼이 없기를<br />
+        잎새에 이는 바람에도<br />
+        나는 괴로워했다.<br />
+        <b>별</b>을 노래하는 마음으로<br />
+        모든 죽어가는 것을 사랑해야지<br />
+        그리고 나한테 주어진 길을<br />
+        걸어가야겠다.
+      </p>
+      <p>오늘 밤에도 <strong>별</strong>이 바람에 스치운다.</p>
+    </div>
+    <div>
+      <h3>프로야구 순위</h3>
+      <!-- 순서 있을 때 ol 순서 없을 때 ul -->
+      <ol>
+        <li>SK 랜더스</li>
+        <li>LG 트윈스</li>
+        <li>두산 베어스</li>
+        <li>키움 히어로스</li>
+      </ol>
+    </div>
+    <div>
+      <!-- definition list -->
+      <dl>
+        <dt>사과 :</dt>
+        <dd>apple</dd>
+      </dl>
+    </div>
+    <div>
+      <p>정상가 : <del>300원</del></p>
+      <p>세일가 : 200원</p>
+    </div>
+    <div>
+      <p>1py : 3.3m<sup>2</sup></p>
+      <p>1py : 3.3m<sub>2</sub></p>
+    </div>
+    <div>
+      <h3>인용문</h3>
+      <p>...에 의하면</p>
+      <!-- blockquote 잘안씀 -->
+      <blockquote cite="https://post.naver.com/viewer/postView.naver?volumeNo=33621393&memberNo=15460571">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est suscipit nisi, adipisci asperiores natus ullam, odit excepturi earum amet laudantium corrupti architecto commodi sit quam ab nihil
+        at eum totam.
+      </blockquote>
+      <p>짧은 인용문 : <q>Lorem, ipsum dolor.</q></p>
+      <p><abbr title="world wide web">W3C</abbr></p>
+      <address>오시는 길 : 서울시</address>
+    </div>
+  </body>
+</html>
