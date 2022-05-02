@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 16px;
+  color: #000000;
+}
+h1 {
+  font-size: 48px;
+}
+/* a 태그는 컬러를 부모로부터 상속받지 않음. 상속을 강제로 받게 하는 value - inherit 또는 컬러 재정의*/
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* block (div, p, h, header, nav, footer, ul, ol, dl, li 등등)
+fhd (1920) */
+/* line (a, em, strong, i, b, span) -> 넓이 속성 적용 안됨 (block 처리한 경우 적용 가능)*/
+/* inline, block, inline-block, flex */
+#header {
+  width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#logo {
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+
+#gnb .list {
+  display: flex;
+}
+#gnb h2 {
+  display: none;
+}
+#gnb .list .depth01 {
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 100px;
+}
+#gnb .list .depth02 {
+  padding-left: 30px;
+  color: #666;
+}
+#gnb .list .depth02 li {
+  margin-top: 10px;
+}
+#gnb .list .depth02 .depth03 {
+  font-size: 14px;
+  padding-left: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* block을 옆으로 나란히 배치하는 방법
+vertical align */
+
+/* css 적용순서
+style 직접적용
+id
+class
+tag */

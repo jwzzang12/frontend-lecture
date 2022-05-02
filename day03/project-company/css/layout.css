@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 20px;
+  color: #555;
+}
+h1 {
+  font-size: 50px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+#header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #000;
+  height: 100px;
+}
+#logo {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  margin-left: 30px;
+  margin-right: 100px;
+}
+#gnb h2 {
+  display: none;
+}
+#gnb .list {
+  display: flex;
+  justify-content: center;
+  white-space: nowrap;
+}
+#gnb .list .depth01 {
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  height: 100px;
+}
+#gnb .list .depth02 {
+  padding-left: 70px;
+  padding-top: 10px;
+  color: #666;
+}
+#gnb .list .depth02 li {
+  font-size: 15px;
+  margin-top: 20px;
+}
+ul {
+  list-style-type: none;
+}
+#gnb .list .depth02 li:before {
+  content: "\2013";
+  position: absolute;
+  margin-left: -20px;
+}
