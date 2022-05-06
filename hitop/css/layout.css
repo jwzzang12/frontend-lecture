@@ -1,0 +1,129 @@
+body {
+  font-family: "Radio Canada", "Noto Sans KR", sans-serif;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+#header {
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+}
+#header:after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 100px;
+  pointer-events: none;
+}
+#header .container {
+  /* 전체 넓이를 1920 이상 쓰지 않음 */
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+#logo {
+  position: absolute;
+  left: 50px;
+  top: 0;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+.online {
+  position: absolute;
+  right: 50px;
+  top: 20px;
+  height: 60px;
+  border: 2px solid #fff;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  border-radius: 100px;
+  font-weight: 500;
+  transition: all 0.5s ease;
+}
+/* element의 높이에 border는 포함하지 않는다. 만약 border를 포함한 넓이를 설정하려면 box-sizing: border-box; 사용 */
+
+#gnb .list {
+  display: flex;
+}
+#gnb .list .depth01 {
+  font-size: 20px;
+  font-weight: 600;
+  /* text-transform: uppercase; lowercase; capitalize; */
+  display: flex;
+  height: 100px;
+  /* line-height: 100px; */
+  /* 글자일 때, 그리고 한줄일 때 (display: block; 으로 지정한 경우) */
+  align-items: center;
+  padding: 0 50px;
+  position: relative;
+}
+.online:hover {
+  border-color: #bf0c14;
+  background-color: #bf0c14;
+}
+#gnb .list > li:hover .depth01 {
+  background-color: #bf0c14;
+}
+#gnb .list .depth01:after {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+  transform: scaleX(0);
+  transition: transform 0.25s ease-in-out;
+}
+/* #gnb .list > li:hover .depth01 {
+  content: "";
+  display: block;
+  background-color: rgb(255, 255, 255);
+  height: 2px;
+  position: relative;
+} */
+#gnb .list > li:hover .depth01:after {
+  transform: scaleX(1);
+}
+#gnb .list > li:hover .depth02 {
+  display: block;
+}
+#gnb .list .depth02 {
+  text-align: center;
+  padding: 30px 10px;
+  display: none;
+  background-color: #bf0c14;
+  /* border-radius: 0 0 10px 10px; */
+}
+#gnb .list .depth02 li a {
+  display: block;
+  padding: 10px 0;
+}
+#gnb .list .depth02 li a:hover {
+  background-color: #af1119;
+}
+/* #header .online {
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 45px;
+  margin: 25px 100px 0 0;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 100px;
+  transition: all 0.5s ease;
+} */

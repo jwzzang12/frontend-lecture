@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AK아이에스</title>
+    <link rel="shortcut icon" href="../images/favicon-akis.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/swiper.min.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <script src="../js/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <h1 id="logo">
+        <a href="https://www.akis.co.kr/" target="_blank"><img src="../images/logo-white-akis.png" alt="AK 아이에스" /></a>
+      </h1>
+      <nav id="gnb">
+        <h2>gnb</h2>
+        <ul class="list">
+          <li>
+            <a href="" class="depth01">ABOUT AKIS</a>
+            <ul class="depth02">
+              <li><a href="">기업개요</a></li>
+              <li><a href="">기업정보</a></li>
+              <li><a href="">윤리경영</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="" class="depth01">INDUSTRY</a>
+            <ul class="depth02">
+              <li><a href="">항공</a></li>
+              <li><a href="">유통/레저</a></li>
+              <li><a href="">화학</a></li>
+              <li><a href="">소비재</a></li>
+              <li><a href="">바이오/헬스</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="" class="depth01">SERVICE</a>
+            <ul class="depth02">
+              <li><a href="">AI-RPA</a></li>
+              <li><a href="">Digital Analytics</a></li>
+              <li><a href="">Cloud</a></li>
+              <li><a href="">Consulting/SI</a></li>
+              <li><a href="">IT Outsourcing</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="" class="depth01">APPLY AKIS</a>
+            <ul class="depth02">
+              <li><a href="">인사제도</a></li>
+              <li><a href="">복리후생</a></li>
+              <li><a href="">채용센터</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- header end -->
+    <div id="mainVisual">
+      <ul class="swiper-wrapper">
+        <li class="swiper-slide visual01">
+          <div class="txtBox">
+            <div class="main">
+              <h2>
+                Value Parter in Leading <br />
+                Business Innovation <br />
+                <span>with Digital Transformation</span>
+              </h2>
+              <p class="headTxt">비즈니스 혁신의 리더, AK 아이에스가 함께 합니다</p>
+            </div>
+          </div>
+        </li>
+        <li class="swiper-slide visual02">
+          <div class="txtBox">
+            <h2>Value Partner</h2>
+            <p class="headTxt">
+              고객의 비즈니스 혁신을 선도하고<br />
+              최고의 가치를 창출하는 파트너를 지향합니다
+            </p>
+            <p class="descTxt">
+              <span>Value Partner</span> in Leading Business Innovation<br />
+              with Digital Transformation
+            </p>
+          </div>
+        </li>
+        <li class="swiper-slide visual03">
+          <div class="txtBox">
+            <h2>Business Innovation</h2>
+            <p class="headTxt">
+              기업 내 운영 전략, 업무 프로세스, 시스템 구축 및<br />
+              운영까지의 End-to-End 혁신 방향을 제시합니다
+            </p>
+            <p class="descTxt">
+              Value Partner in Leading <span>Business Innovation</span> <br />
+              with Digital Transformation
+            </p>
+          </div>
+        </li>
+        <li class="swiper-slide visual04">
+          <div class="txtBox">
+            <h2>Digital Transformation</h2>
+            <p class="headTxt">
+              기업의 비즈니스 전략과 연계된 디지털 기술<br />
+              기반의 혁신 방향을 제시합니다
+            </p>
+            <p class="descTxt">
+              Value Partner in Leading Business Innovation <br />
+              with <span>Digital Transformation</span>
+            </p>
+          </div>
+        </li>
+      </ul>
+      <div class="iconScroll">
+        <span class="txt">scroll</span>
+        <span class="icon"></span>
+      </div>
+    </div>
+    <!-- <button class="prev">
+      <img src="" alt="" />
+    </button>
+    <button class="next">
+      <img src="" alt="" />
+    </button> -->
+    <script>
+      new Swiper("#mainVisual", {
+        navigation: {
+          nextEl: "#mainVisual .next",
+          prevEl: "#mainVisual .prev",
+        },
+      });
+    </script>
+  </body>
+</html>
