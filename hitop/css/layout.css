@@ -127,3 +127,71 @@ a {
   border-radius: 100px;
   transition: all 0.5s ease;
 } */
+/* gnb end */
+#footer {
+  background-color: #555;
+  color: #ccc;
+}
+#footer .utilMenu {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+#footer .utilMenu ul {
+  display: flex;
+  justify-content: center;
+}
+#footer .utilMenu ul li {
+  position: relative;
+}
+#footer .utilMenu ul li:after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 15px;
+  background-color: #ccc;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#footer .utilMenu ul li:nth-child(1):after {
+  display: none;
+}
+#footer .utilMenu ul li a {
+  display: block;
+  padding: 20px 40px;
+}
+#footer .utilMenu ul li a strong {
+  color: #fff;
+  font-weight: 500;
+}
+#footer .addressBox {
+  padding: 50px 0;
+}
+#footer .addressBox .container {
+  display: flex;
+  position: relative;
+}
+#footer .addressBox .address {
+  margin-left: 50px;
+}
+#footer .addressBox .address .info {
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+#footer .addressBox .address .info span {
+  margin-right: 20px;
+}
+#footer .addressBox .copyright {
+  color: #999;
+}
+#footer .addressBox .tel {
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+}
+#footer .addressBox .tel strong {
+  font-size: 42px;
+  margin-top: 10px;
+  /* letter-spacing: 10px; */
+}
