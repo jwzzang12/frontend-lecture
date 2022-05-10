@@ -1,0 +1,187 @@
+@import "vars";
+@import "mixin";
+// common
+.section {
+  .titleBox {
+    text-align: center;
+    margin-top: 100px;
+  }
+  h3 {
+    color: #111;
+    font-size: 60px;
+    font-weight: 800;
+    margin-bottom: 50px;
+  }
+  h4 {
+    color: #111;
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  p {
+    color: #555;
+    font-size: 21px;
+  }
+}
+
+#mainVisual {
+  overflow: hidden;
+  color: rgb(255, 255, 255);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  li {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+  .visual01 {
+    background-image: url(../images/main/visual01.jpg);
+  }
+  .visual02 {
+    background-image: url(../images/main/visual02.png);
+  }
+  .visual03 {
+    background-image: url(../images/main/visual03.png);
+  }
+  .visual04 {
+    background-image: url(../images/main/visual04.png);
+  }
+  ul li .txtBox {
+    width: 1500px;
+    height: 1000px;
+    margin: 210px auto;
+    .main {
+      text-align: right;
+    }
+    h2 {
+      font-size: 72px;
+      font-weight: 700;
+      line-height: 5rem;
+      padding-bottom: 50px;
+      span {
+        color: rgb(175, 155, 112);
+      }
+    }
+    .headTxt {
+      font-size: 28px;
+      line-height: 3rem;
+      padding-bottom: 30px;
+    }
+    .descTxt {
+      font-size: 18px;
+      line-height: 2rem;
+      color: rgb(175, 155, 112);
+    }
+    a {
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 180px;
+      height: 60px;
+      border: 2px solid #fff;
+      border-radius: 100px;
+      transition: all 0.25s ease;
+    }
+    .first span {
+      color: rgb(175, 155, 112);
+    }
+    span {
+      color: rgb(255, 255, 255);
+    }
+  }
+  .btns {
+    position: absolute;
+    bottom: 50px;
+    z-index: 5;
+    width: 1500px;
+    text-align: left;
+    button {
+      background: none;
+      border: none;
+      color: rgb(255, 255, 255);
+    }
+  }
+  .iconScroll {
+    position: absolute;
+    bottom: 75px;
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    .txt {
+      font-size: 15px;
+      font-weight: 100;
+      display: block;
+      margin-bottom: 6px;
+    }
+    .icon {
+      border: 2px solid #fff;
+      width: 16px;
+      height: 38px;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: block;
+      margin: 0 auto 10px;
+      border-radius: 100px;
+      box-sizing: unset;
+      &:before {
+        content: "";
+        display: block;
+        width: 3px;
+        height: 10px;
+        border-radius: 100px;
+        background-color: #fff;
+        margin: 10px auto 0;
+        animation: mouseAnimation 2s ease-in-out 0s infinite alternate;
+      }
+    }
+  }
+}
+#industry .container {
+  width: 1500px;
+  margin: 0 auto;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    li {
+      text-align: center;
+      position: relative;
+      margin-bottom: 120px;
+      &:hover {
+        transform: translateY(-15px);
+      }
+      img {
+        display: block;
+        border-radius: 25px;
+        &:hover {
+          filter: brightness(0);
+        }
+      }
+      .txtBox {
+        font-size: 24px;
+        font-weight: 700;
+        color: #fff;
+        position: absolute;
+        left: 50%;
+        bottom: 50px;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}
+
+@keyframes mouseAnimation {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(5px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,253 @@
+.section .titleBox {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.section h3 {
+  color: #111;
+  font-size: 60px;
+  font-weight: 800;
+  margin-bottom: 50px;
+}
+
+.section h4 {
+  color: #111;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.section p {
+  color: #555;
+  font-size: 21px;
+}
+
+#mainVisual {
+  overflow: hidden;
+  color: white;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#mainVisual li {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+#mainVisual .visual01 {
+  background-image: url(../images/main/visual01.jpg);
+}
+
+#mainVisual .visual02 {
+  background-image: url(../images/main/visual02.png);
+}
+
+#mainVisual .visual03 {
+  background-image: url(../images/main/visual03.png);
+}
+
+#mainVisual .visual04 {
+  background-image: url(../images/main/visual04.png);
+}
+
+#mainVisual ul li .txtBox {
+  width: 1500px;
+  height: 1000px;
+  margin: 210px auto;
+}
+
+#mainVisual ul li .txtBox .main {
+  text-align: right;
+}
+
+#mainVisual ul li .txtBox h2 {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 5rem;
+  padding-bottom: 50px;
+}
+
+#mainVisual ul li .txtBox h2 span {
+  color: #af9b70;
+}
+
+#mainVisual ul li .txtBox .headTxt {
+  font-size: 28px;
+  line-height: 3rem;
+  padding-bottom: 30px;
+}
+
+#mainVisual ul li .txtBox .descTxt {
+  font-size: 18px;
+  line-height: 2rem;
+  color: #af9b70;
+}
+
+#mainVisual ul li .txtBox a {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 180px;
+  height: 60px;
+  border: 2px solid #fff;
+  border-radius: 100px;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+#mainVisual ul li .txtBox .first span {
+  color: #af9b70;
+}
+
+#mainVisual ul li .txtBox span {
+  color: white;
+}
+
+#mainVisual .btns {
+  position: absolute;
+  bottom: 50px;
+  z-index: 5;
+  width: 1500px;
+  text-align: left;
+}
+
+#mainVisual .btns button {
+  background: none;
+  border: none;
+  color: white;
+}
+
+#mainVisual .iconScroll {
+  position: absolute;
+  bottom: 75px;
+  z-index: 2;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+}
+
+#mainVisual .iconScroll .txt {
+  font-size: 15px;
+  font-weight: 100;
+  display: block;
+  margin-bottom: 6px;
+}
+
+#mainVisual .iconScroll .icon {
+  border: 2px solid #fff;
+  width: 16px;
+  height: 38px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: block;
+  margin: 0 auto 10px;
+  border-radius: 100px;
+  -webkit-box-sizing: unset;
+          box-sizing: unset;
+}
+
+#mainVisual .iconScroll .icon:before {
+  content: "";
+  display: block;
+  width: 3px;
+  height: 10px;
+  border-radius: 100px;
+  background-color: #fff;
+  margin: 10px auto 0;
+  -webkit-animation: mouseAnimation 2s ease-in-out 0s infinite alternate;
+          animation: mouseAnimation 2s ease-in-out 0s infinite alternate;
+}
+
+#industry .container {
+  width: 1500px;
+  margin: 0 auto;
+}
+
+#industry .container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 80px;
+}
+
+#industry .container ul li {
+  text-align: center;
+  position: relative;
+  margin-bottom: 120px;
+}
+
+#industry .container ul li:hover {
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+}
+
+#industry .container ul li img {
+  display: block;
+  border-radius: 25px;
+}
+
+#industry .container ul li img:hover {
+  -webkit-filter: brightness(0);
+          filter: brightness(0);
+}
+
+#industry .container ul li .txtBox {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  bottom: 50px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+@-webkit-keyframes mouseAnimation {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes mouseAnimation {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
