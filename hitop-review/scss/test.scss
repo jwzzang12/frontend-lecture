@@ -1,0 +1,56 @@
+//주석
+/*
+주석이 두줄이상
+인 경우
+*/
+//$ 변수명: 변수의 값;
+//변수의 유효범위는 {} 기준
+//!global을 flag로 붙이면 전역으로 사용가능
+/*eg.
+#header {
+  $color: #111 !global;
+}*/
+@import "vars";
+@import "mixin";
+#header {
+  .container {
+    display: flex;
+    #gnb {
+      color: #111;
+      .list {
+        display: flex;
+        @at-root .box {
+          display: block;
+        }
+        //margin-top: 20px;
+        //margin-bottom: 30px;
+        margin: {
+          top: 20px;
+          bottom: 30px;
+        }
+        li {
+          &:hover .depth01 {
+            color: #f00;
+          }
+          .depth01 {
+            display: flex;
+          }
+        }
+      }
+    }
+  }
+}
+#news ul li {
+  h3 {
+    @include ellipsis;
+  }
+  .desc {
+    @include multiEllipsis();
+  }
+}
+#mainVisual {
+  .slogan {
+    @include absCenter(true, false);
+    @include longShadow(rgba(255, 0, 0, 0.418));
+  }
+}

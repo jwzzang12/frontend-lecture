@@ -22,7 +22,7 @@ a {
   top: 100px;
   pointer-events: none;
 }
-#header .container {
+#header .container01 {
   /* 전체 넓이를 1920 이상 쓰지 않음 */
   max-width: 1920px;
   margin: 0 auto;

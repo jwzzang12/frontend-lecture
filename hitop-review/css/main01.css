@@ -1,0 +1,339 @@
+/* common */
+.section {
+  padding: 100px 0;
+}
+.section .titleBox {
+  color: #333;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.section .titleBox h2 {
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.section .titleBox p {
+  line-height: 1.5em;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+#mainVisual {
+  overflow: hidden;
+}
+#mainVisual li {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  /* background-size: contain;
+  (가로세로 종횡비 유지하면서 가득채우는 속성) */
+  /* background-size: cover;
+  (가로세로 종횡비 유지하고 자르면서 가득 채우는 속성) */
+  /* background-repeat: no-repeat; */
+}
+#mainVisual .visual01 {
+  background-image: url(../images/main/mainVisual01.jpg);
+}
+#mainVisual .visual02 {
+  background-image: url(../images/main/mainVisual02.jpg);
+}
+#mainVisual .visual03 {
+  background-image: url(../images/main/mainVisual03.jpg);
+}
+#mainVisual .slogan {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-25%);
+  z-index: 2;
+  color: #fff;
+  text-align: center;
+}
+#mainVisual .slogan h2 {
+  font-size: 64px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+#mainVisual .slogan p {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+/* #mainVisual button {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 50%;
+  z-index: 3;
+  color: #fff;
+  border: none;
+  padding: 0;
+  width: 80px;
+  height: 80px;
+}
+#mainVisual button span {
+  font-size: 64px;
+}
+#mainVisual button .material-icons {
+  font-size: 64px;
+} */
+#mainVisual button {
+  position: absolute;
+  top: 50%;
+  z-index: 3;
+  padding: 0;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.01);
+}
+#mainVisual .prev {
+  left: 0px;
+  /* vertical-align: top;
+  inline-block요소들이 원래 가지고 있는 하단 여백을 없애는 방법 */
+}
+#mainVisual .next {
+  right: 0px;
+}
+#mainVisual .iconScroll {
+  position: absolute;
+  bottom: 50px;
+  z-index: 1;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+}
+#mainVisual .iconScroll .icon {
+  border: 3px solid #fff;
+  width: 24px;
+  height: 45px;
+  display: block;
+  margin: 0 auto 10px;
+  border-radius: 100px;
+  box-sizing: unset;
+}
+#mainVisual .iconScroll .icon:before {
+  content: "";
+  display: block;
+  width: 3px;
+  height: 8px;
+  background-color: #fff;
+  margin: 10px auto 0;
+  animation: mouseAnimation 1s ease-in-out 0s infinite alternate;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  /* animation-name: mouseAnimation;
+  animation-duration: 0.75s;
+  animation-iteration-count: infinite; */
+}
+#quickMenu {
+  padding: 0;
+}
+#quickMenu .container ul {
+  display: flex;
+}
+#quickMenu .container ul li {
+  position: relative;
+  overflow: hidden;
+}
+#quickMenu .container ul li:hover::before {
+  opacity: 1;
+}
+#quickMenu .container ul li:hover img {
+  transform: scale(1.2);
+}
+#quickMenu .container ul li:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  top: 20px;
+  bottom: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out;
+  z-index: 1;
+  pointer-events: none;
+}
+#quickMenu .container ul li .txtBox {
+  position: absolute;
+  left: 40px;
+  bottom: 40px;
+}
+#quickMenu .container ul li .txtBox p {
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  /* 상하 margin 값이 겹치면 숫자가 큰쪽만 반영 - 마진병합 현상 */
+}
+#quickMenu .container ul li .txtBox h3 {
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 3rem;
+}
+#quickMenu .container ul li img {
+  vertical-align: top;
+  transition: transform 0.25s ease-in-out;
+}
+#business {
+  background-image: url(../images/main/bgBusiness.jpg);
+}
+#business .titleBox p {
+  font-size: 20px;
+  font-weight: 300;
+}
+#business .container ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  /* align-content: 는 wrap 속성이 적용되어서 두줄이상 일때 정렬 */
+  height: 720px;
+}
+#business .container ul li {
+  position: relative;
+  overflow: hidden;
+}
+#business .container ul li .txtBox {
+  position: absolute;
+  left: 40px;
+  bottom: 40px;
+}
+#business .container ul li .txtBox h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+#business .container ul li img {
+  vertical-align: top;
+  transition: transform 0.5s ease-in-out;
+}
+#business .container ul li:hover img {
+  transform: scale(1.2);
+}
+/* business end */
+#news .list {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: stretch; default 값 */
+}
+#news .list li {
+  flex-basis: 31.33%;
+  border: 1px solid rgba(153, 153, 153, 0.5);
+  box-shadow: inset 0 0 0 #999;
+  position: relative;
+  transition: all 0.25s ease-in-out;
+  /* flex-grow: ;
+  flex-shrink: ; */
+}
+#news .list li:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 10px rgba(51, 51, 51, 0.2);
+}
+#news .list li:after {
+  content: "";
+  display: block;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  pointer-events: none;
+  transition: box-shadow 0.25s ease-in-out;
+}
+#news .list li:hover::after {
+  box-shadow: inset 0 0 0 3px #bf0c14;
+}
+#news .list li img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+}
+#news .list li .desc {
+  padding: 30px;
+  color: #333;
+}
+#news .list li .desc h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  /* 한줄로 만들고 ...처리
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; */
+}
+#news .list li .desc .txt {
+  line-height: 1.5;
+  margin-bottom: 20px;
+  height: 3em;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+#news .list li .desc .date {
+  color: #999;
+}
+#customer {
+  background-image: url(../images/main/bgCustomer.jpg);
+}
+#customer .titleBox {
+  color: #fff;
+}
+#customer .titleBox h2:after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 1px;
+  background-color: #fff;
+  margin: 30px auto;
+}
+#customer .container {
+  display: block;
+  margin: 0 auto;
+}
+.btns {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.btns .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  background-color: #bf0c14;
+  padding: 0 50px;
+  border-radius: 100px;
+}
+@keyframes mouseAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/* 스스로 만든 코드
+  #mainTxt {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+}
+#headTxt {
+  font-size: 70px;
+  font-weight: 500;
+  padding-bottom: 30px;
+}
+#bodyTxt {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 2.5rem;
+  text-align: center;
+} */
