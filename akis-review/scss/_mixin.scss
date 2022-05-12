@@ -4,12 +4,14 @@
   text-overflow: ellipsis;
 }
 @mixin multiEllipsis($line: 3, $lineHeight: 1.5) {
-  line-height: $lineHeight;
+  display: -webkit-box;
   height: ($lineHeight * 1em * $line);
   overflow: hidden;
-  display: -webkit-box;
+  line-height: $lineHeight;
   -webkit-line-clamp: $line;
+  /* autoprefixer: off */
   -webkit-box-orient: vertical;
+  word-break: break-all;
 }
 @mixin absCenter($horizontal: true, $vertical: true) {
   position: absolute;
@@ -30,6 +32,12 @@
   content: $content;
   display: $display;
   position: $pos;
+}
+@mixin box($w: 10px, $h: 10px, $bg: #000) {
+  display: block;
+  width: $w;
+  height: $h;
+  background-color: $bg;
 }
 @mixin longShadow($shadowColor: rgb(0, 0, 0), $limit: 20) {
   $shadow: "";

@@ -1,0 +1,126 @@
+body {
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+  font-size: 16px;
+  min-height: 2000px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#header {
+  /* border-bottom: 1px solid #ccc; */
+  width: 100%;
+  /* position: fixed; */
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  height: 100px;
+  overflow: hidden;
+  transition: height 0.5s cubic-bezier(0.87, -0.36, 0.18, 1.39);
+  /* transition-property: height;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.87,-0.36, 0.18, 1.39); */
+  /* transition-duration: 500ms;  */
+  /* transition-delay: 500ms; */
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  z-index: 99;
+}
+#header:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+  position: absolute;
+  top: 100px;
+}
+
+#header:hover {
+  height: 450px;
+}
+
+#header .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0 auto;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+
+#gnb .list {
+  display: flex;
+}
+#gnb h2 {
+  display: none;
+}
+#gnb .list .depth01 {
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding: 0 30px;
+  height: 100px;
+  position: relative;
+  transition-property: color;
+  transition-duration: 500ms;
+}
+#gnb .list .depth01:after {
+  content: "";
+  display: block;
+
+  background-color: #f00;
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  bottom: 0;
+  height: 2px;
+  transform: scaleX(0);
+  transition: transform 0.25s ease-in-out;
+}
+#gnb .list .depth01:hover {
+  color: #f00;
+}
+#gnb .list .depth01:hover:after {
+  transform: scaleX(1);
+}
+#gnb .list .depth02 {
+  padding-top: 30px;
+  padding-left: 30px;
+  color: #666;
+}
+#gnb .list .depth02 li {
+  margin-top: 10px;
+}
+#gnb .list .depth02 .depth03 {
+  font-size: 14px;
+
+  margin: 20px 0;
+}
+#gnb .list .depth02 .depth03 li {
+  display: flex;
+  align-items: center;
+}
+#gnb .list .depth02 .depth03 li:before {
+  /* css에서 만드는 element */
+  content: "";
+  display: block;
+  width: 4px;
+  height: 4px;
+  background-color: #f00;
+
+  border-radius: 2px;
+
+  margin-right: 5px;
+}

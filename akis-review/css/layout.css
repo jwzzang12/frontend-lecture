@@ -15,19 +15,14 @@ a {
 
 #header {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: space-evenly;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   height: 100px;
   overflow: hidden;
   position: absolute;
   z-index: 5;
   color: white;
-  -webkit-transition: all 0.5s 0s;
   transition: all 0.5s 0s;
 }
 
@@ -53,12 +48,8 @@ a {
   left: 50px;
   top: -10px;
   height: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 #gnb h2 {
@@ -66,31 +57,21 @@ a {
 }
 
 #gnb .list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   white-space: nowrap;
 }
 
 #gnb .list .depth01 {
   font-size: 18px;
   font-weight: 600;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 0 60px;
   height: 100px;
   position: relative;
-  -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 0.5s 0.1s;
-          transition-duration: 0.5s 0.1s;
+  transition-duration: 0.5s 0.1s;
 }
 
 #gnb .list .depth01:after {
@@ -102,17 +83,12 @@ a {
   right: 30px;
   bottom: 0;
   height: 3px;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out;
-  transition: -webkit-transform 0.25s ease-in-out;
+  transform: scaleX(0);
   transition: transform 0.25s ease-in-out;
-  transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
 }
 
 #gnb .list .depth01:hover:after {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 #gnb .list .depth02 {
