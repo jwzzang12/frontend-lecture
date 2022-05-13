@@ -1,19 +1,52 @@
 @import "vars";
 @import "mixin";
+.list {
+  display: flex;
+  &.center {
+    justify-content: center;
+  }
+}
 .section {
   padding: 100px 0;
   .titleBox {
+    margin-bottom: 50px;
     text-align: center;
     h2 {
       font-size: $font-large;
+      font-weight: 300;
+      line-height: 1.25;
       strong {
-        font-weight: 700;
         display: block;
-        line-height: 1.5;
+        font-weight: 700;
         span {
           color: $main-color;
         }
       }
+    }
+  }
+}
+.btns {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    padding: 0 30px;
+    border-radius: 100px;
+    &.line {
+      color: $main-color;
+      border: 2px solid $main-color;
+      background: none;
+      text-shadow: none;
+    }
+    &:after {
+      margin-left: 100px;
+      font-family: "Material Icons";
+      font-size: 20px;
+      content: "\e145";
     }
   }
 }
@@ -116,9 +149,9 @@
     .swiper-pagination-bullet {
       width: 100px;
       height: 4px;
+      position: relative;
       // opacity: 1;
       border-radius: 0;
-      position: relative;
       &:after {
         @include pseudo;
         @include box(0, 100%, $main-color);
@@ -130,23 +163,129 @@
     }
   }
 }
-#partner {
+#portfolio {
+  position: relative;
   .swiper-container {
     overflow: hidden;
   }
-  .list {
+  ul {
     li {
-      width: auto;
-      border: 1px solid $main-color;
+      width: 300px;
+      overflow: hidden;
+      border-radius: 15px;
+      &:hover {
+        .imgBox {
+          .sticker {
+            color: $main-color;
+            background-color: #fff;
+          }
+          .cover {
+            top: 0;
+          }
+        }
+      }
+      // border: 1px solid $main-color;
       .imgBox {
+        position: relative;
+        overflow: hidden;
         img {
           width: 100%;
+          vertical-align: top;
+        }
+        .cover {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          // 100% 안에 padding 값 포함
+          top: 100%;
+          left: 0;
+          padding-top: 60px;
+          padding-left: 20px;
+          color: #fff;
+          transition: all 0.25s ease-in-out;
+          background-color: rgba($main-color, 0.75);
+          box-sizing: border-box;
+          .link {
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            &:after {
+              display: inline-block;
+              margin-left: 5px;
+              font-family: "Material Icons";
+              transform: translateY(2px);
+              content: "\f1df";
+            }
+          }
+        }
+        .sticker {
+          display: block;
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          z-index: 2;
+          padding: 10px 20px;
+          font-size: 14px;
+          color: #fff;
+          transition: 0.25s ease;
+          background-color: $main-color;
+          border-radius: 100px;
         }
       }
       .txtBox {
-        border: 1px solid #666;
-        border-radius: 0 0 20px 20px;
         padding: 20px;
+        border: 1px solid #ccc;
+        border-top: none;
+        text-align: center;
+        border-radius: 0 0 15px 15px;
+        h3 {
+          margin-top: 20px;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .pagination {
+    width: 800px;
+    height: 5px;
+    top: auto;
+    bottom: 200px;
+    left: 50%;
+    overflow: hidden;
+    transform: translateX(-50%);
+    border-radius: 50px;
+    background-color: rgba(204, 204, 204, 0.2);
+    .swiper-pagination-progressbar-fill {
+      background-color: $main-color;
+    }
+  }
+}
+#partner {
+  background-color: $bg-color;
+  .titleBox {
+    strong {
+      display: inline-block;
+    }
+  }
+  .list {
+    li {
+      overflow: hidden;
+      margin: 0 10px;
+      background: #fff;
+      box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+      transition: all 0.25s ease-in-out;
+      border-radius: 15px;
+      &:hover {
+        transform: translateY(-20px);
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+      }
+      .txt {
+        padding: 20px;
+        font-size: $font-medium * 0.75;
+        line-height: 1.25;
+        border-top: 1px solid #eee;
+        text-align: center;
       }
     }
   }
