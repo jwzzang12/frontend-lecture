@@ -1,0 +1,22 @@
+.clearFix {
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+.list {
+  // display: flex;
+  // overflow:   hidden;
+  li {
+    float: left;
+    height: 200px;
+    padding: 0 50px;
+  }
+}
+.box {
+  // clear: both;
+  background: #f00;
+  height: 300px;
+  width: 500px;
+}

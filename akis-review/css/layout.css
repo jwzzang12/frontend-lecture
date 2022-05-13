@@ -52,10 +52,6 @@ a {
   align-items: center;
 }
 
-#gnb h2 {
-  display: none;
-}
-
 #gnb .list {
   display: flex;
   justify-content: center;
@@ -70,8 +66,7 @@ a {
   padding: 0 60px;
   height: 100px;
   position: relative;
-  transition-property: color;
-  transition-duration: 0.5s 0.1s;
+  transition: color 0.1s;
 }
 
 #gnb .list .depth01:after {
@@ -79,10 +74,10 @@ a {
   display: block;
   position: absolute;
   background-color: #0c4fa7;
-  left: 30px;
-  right: 30px;
+  left: 45px;
+  right: 45px;
   bottom: 0;
-  height: 3px;
+  height: 4px;
   transform: scaleX(0);
   transition: transform 0.25s ease-in-out;
 }
@@ -106,4 +101,24 @@ a {
   content: "\2012";
   margin-left: -20px;
   margin-right: 5px;
+}
+
+#sns {
+  position: absolute;
+  right: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+#sns span {
+  font-size: 45px;
+}
+
+#menu {
+  position: absolute;
+  right: 50px;
+  height: 100px;
+  display: flex;
+  align-items: center;
 }

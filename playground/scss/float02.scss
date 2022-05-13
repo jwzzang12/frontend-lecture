@@ -1,0 +1,30 @@
+.clearFix {
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+.txtBox {
+  width: 600px;
+  img {
+    float: left;
+    width: 300px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  p:first-letter {
+    font-size: 100px;
+    font-weight: bold;
+  }
+  p {
+    float: left;
+    width: 200px;
+    text-align: justify;
+  }
+}
+.box {
+  background: #f00;
+  height: 300px;
+  width: 500px;
+}

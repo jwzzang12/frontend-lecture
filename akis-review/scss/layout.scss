@@ -47,9 +47,6 @@ a {
   align-items: center;
 }
 #gnb {
-  h2 {
-    display: none;
-  }
   .list {
     display: flex;
     justify-content: center;
@@ -62,15 +59,14 @@ a {
       padding: 0 60px;
       height: 100px;
       position: relative;
-      transition-property: color;
-      transition-duration: 0.5s 0.1s;
+      transition: color 0.1s;
       &:after {
         @include pseudo;
         background-color: $sub-color;
-        left: 30px;
-        right: 30px;
+        left: 45px;
+        right: 45px;
         bottom: 0;
-        height: 3px;
+        height: 4px;
         transform: scaleX(0);
         transition: transform 0.25s ease-in-out;
       }
@@ -93,4 +89,21 @@ a {
       }
     }
   }
+}
+#sns {
+  position: absolute;
+  right: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  span {
+    font-size: 45px;
+  }
+}
+#menu {
+  position: absolute;
+  right: 50px;
+  height: 100px;
+  display: flex;
+  align-items: center;
 }
