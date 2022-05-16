@@ -70,7 +70,7 @@
       <div id="menu"><span class="material-icons"> menu </span></div>
     </header>
     <!-- header end -->
-    <div id="mainVisual">
+    <section id="mainVisual">
       <ul class="swiper-wrapper">
         <li class="swiper-slide visual01">
           <div class="txtBox">
@@ -139,9 +139,9 @@
           <span class="material-icons"> navigate_next </span>
         </button>
       </div>
-    </div>
+    </section>
     <!-- mainVisual end -->
-    <div id="industry" class="section">
+    <section id="industry" class="section">
       <div class="titleBox">
         <h3>INDUSTRY</h3>
         <h4>AK아이에스는 고객에게 최고의 가치를 제공하고 있습니다</h4>
@@ -227,9 +227,9 @@
           </li>
         </ul>
       </div>
-    </div>
+    </section>
     <!-- industry end -->
-    <div id="service" class="section">
+    <section id="service" class="section">
       <div class="titleBox">
         <h3>SERVICE</h3>
         <h4>AK아이에스가 제안하는 퀄리티 높은 정보의 파도를 경험하세요</h4>
@@ -316,12 +316,13 @@
           </li>
         </ul>
       </div>
-    </div>
+    </section>
     <!-- service end -->
-    <div id="news" class="section">
+    <section id="news" class="section">
       <div class="titleBox">
         <h3>AKIS NEWS</h3>
         <h4>AK아이에스의 최신 소식을 지금 만나보세요.</h4>
+        <div class="sticker">MORE VIEW</div>
       </div>
       <div class="container">
         <ul class="swiper-wrapper">
@@ -476,9 +477,6 @@
             </div>
           </li>
         </ul>
-      </div>
-      <div class="sticker">MORE VIEW</div>
-      <div class="btns">
         <button class="prev">
           <span class="material-icons"> navigate_before </span>
         </button>
@@ -486,7 +484,42 @@
           <span class="material-icons"> navigate_next </span>
         </button>
       </div>
-    </div>
+    </section>
+    <!-- news end -->
+    <footer id="footer">
+      <div class="client">
+        <h3>CLIENT</h3>
+        <div class="list">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide"><img src="../images/footer/client_ico01.png" alt="" /></li>
+            <li class="swiper-slide"><img src="../images/footer/client_ico02.png" alt="" /></li>
+            <li class="swiper-slide"><img src="../images/footer/client_ico03.png" alt="" /></li>
+            <li class="swiper-slide"><img src="../images/footer/client_ico04.png" alt="" /></li>
+            <li class="swiper-slide"><img src="../images/footer/client_ico05.png" alt="" /></li>
+            <li class="swiper-slide"><img src="../images/footer/client_ico06.png" alt="" /></li>
+            <li class="swiper-slide"><img src="../images/footer/client_ico07.png" alt="" /></li>
+            <li class="swiper-slide"><img src="../images/footer/client_ico08.png" alt="" /></li>
+            <li class="swiper-slide"><img src="../images/footer/client_ico09.png" alt="" /></li>
+            <li class="swiper-slide"><img src="../images/footer/client_ico10.png" alt="" /></li>
+          </ul>
+        </div>
+      </div>
+      <div class="addressBox">
+        <p class="logo">AK아이에스</p>
+        <p class="address">
+          <span>서울특별시 마포구 양화로 188, 8층(동교동, 애경타워)</span>
+          <span>Tel. 02-768-2700</span>
+          <span>E-mail. akis@aekyung.kr</span>
+        </p>
+        <p class="copyright">COPYRIGHT © 2022 AKIS CO. LTD ALL RIGHTS RESERVED.</p>
+      </div>
+      <div class="info">
+        <a href="">개인정보처리방침</a>
+        <a href="">공지사항</a>
+        <a href="">NEWS</a>
+        <a href="">Contact Us</a>
+      </div>
+    </footer>
     <script>
       new Swiper("#mainVisual", {
         speed: 1000,
@@ -502,10 +535,21 @@
 
       new Swiper("#news .container", {
         slidesPerView: "auto",
-        spaceBetween: 30,
+        spaceBetween: 50,
         centeredSlides: true,
         loop: true,
         mousewheel: true,
+      });
+
+      new Swiper("#footer .list", {
+        slidesPerView: "auto",
+        spaceBetween: 50,
+        loop: true,
+        mousewheel: true,
+        speed: 1000,
+        autoplay: {
+          delay: 3000,
+        },
       });
     </script>
   </body>

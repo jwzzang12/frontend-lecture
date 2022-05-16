@@ -300,6 +300,7 @@
   overflow: hidden;
   // position: relative;
   .titleBox {
+    position: relative;
     h4 {
       color: #555;
     }
@@ -307,6 +308,7 @@
   .container {
     margin-top: 100px;
     margin-bottom: 50px;
+    position: relative;
     .swiper-slide {
       width: 450px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -351,17 +353,23 @@
   button {
     border: none;
     background: none;
+    @include pseudo;
     .material-icons {
       font-size: 50px;
-      @include pseudo;
+    }
+    .prev {
+      left: 0;
+    }
+    .next {
+      right: 15px;
     }
   }
   .sticker {
     position: absolute;
-    padding-top: 10px;
     font-size: $font-normal;
-    color: #555;
-
+    color: #aaa;
+    right: 300px;
+    @include absCenter(false, true);
     &:after {
       display: inline-block;
       padding-left: 5px;

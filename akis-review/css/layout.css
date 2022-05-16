@@ -43,7 +43,11 @@ a {
   color: #505050;
 }
 
-#logo {
+#header:hover #logo img {
+  filter: brightness(30%);
+}
+
+#header #logo {
   position: absolute;
   left: 50px;
   top: -10px;
@@ -52,13 +56,13 @@ a {
   align-items: center;
 }
 
-#gnb .list {
+#header #gnb .list {
   display: flex;
   justify-content: center;
   white-space: nowrap;
 }
 
-#gnb .list .depth01 {
+#header #gnb .list .depth01 {
   font-size: 18px;
   font-weight: 600;
   display: flex;
@@ -69,7 +73,7 @@ a {
   transition: color 0.1s;
 }
 
-#gnb .list .depth01:after {
+#header #gnb .list .depth01:after {
   content: "";
   display: block;
   position: absolute;
@@ -82,28 +86,28 @@ a {
   transition: transform 0.25s ease-in-out;
 }
 
-#gnb .list .depth01:hover:after {
+#header #gnb .list .depth01:hover:after {
   transform: scaleX(1);
 }
 
-#gnb .list .depth02 {
+#header #gnb .list .depth02 {
   padding-left: 70px;
   padding-top: 10px;
   color: #505050;
 }
 
-#gnb .list .depth02 li {
+#header #gnb .list .depth02 li {
   font-size: 15px;
   margin-top: 15px;
 }
 
-#gnb .list .depth02 li:before {
+#header #gnb .list .depth02 li:before {
   content: "\2012";
   margin-left: -20px;
   margin-right: 5px;
 }
 
-#sns {
+#header #sns {
   position: absolute;
   right: 100px;
   height: 100px;
@@ -111,14 +115,27 @@ a {
   align-items: center;
 }
 
-#sns span {
+#header #sns span {
   font-size: 45px;
 }
 
-#menu {
+#header #menu {
   position: absolute;
   right: 50px;
   height: 100px;
   display: flex;
   align-items: center;
+}
+
+#footer .client {
+  display: flex;
+  height: 200px;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+}
+
+#footer .client .list {
+  width: 300px;
 }

@@ -16,13 +16,12 @@
 }
 
 .section .titleBox h2 {
-  font-size: 48px;
+  font-size: 42px;
   font-weight: 300;
   line-height: 1.25;
 }
 
 .section .titleBox h2 strong {
-  display: block;
   font-weight: 700;
 }
 
@@ -36,11 +35,16 @@
   margin-top: 100px;
 }
 
+.btns.left {
+  justify-content: flex-start;
+}
+
 .btns .btn {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 50px;
+  margin: 0 5px;
   padding: 0 30px;
   border-radius: 100px;
 }
@@ -52,11 +56,12 @@
   text-shadow: none;
 }
 
-.btns .btn:after {
-  margin-left: 100px;
+.btns .btn.arrow:after {
+  margin-left: 3px;
   font-family: "Material Icons";
   font-size: 20px;
-  content: "\e145";
+  transform: translateY(-2px);
+  content: "\e941";
 }
 
 #mainVisual {
@@ -118,7 +123,7 @@
 
 #mainVisual li .txtBox h2 {
   margin: 30px 0;
-  font-size: 48px;
+  font-size: 42px;
   font-weight: 700;
   line-height: 1.5em;
 }
@@ -287,6 +292,13 @@
   font-size: 20px;
 }
 
+#portfolio .btn:after {
+  margin-left: 100px;
+  font-family: "Material Icons";
+  font-size: 20px;
+  content: "\e145";
+}
+
 #portfolio .pagination {
   width: 800px;
   height: 5px;
@@ -305,10 +317,6 @@
 
 #partner {
   background-color: #eff6f8;
-}
-
-#partner .titleBox strong {
-  display: inline-block;
 }
 
 #partner .list li {
@@ -331,4 +339,387 @@
   line-height: 1.25;
   border-top: 1px solid #eee;
   text-align: center;
+}
+
+#elearning .pagination {
+  justify-content: center;
+}
+
+#elearning .pagination .swiper-pagination-bullet {
+  width: 200px;
+  height: 200px;
+  background: none;
+  opacity: 1;
+  text-align: center;
+}
+
+#elearning .pagination .swiper-pagination-bullet:nth-child(1):before {
+  background-image: url("../images/main/service_icon01.png");
+}
+
+#elearning .pagination .swiper-pagination-bullet:nth-child(2):before {
+  background-image: url("../images/main/service_icon02.png");
+}
+
+#elearning .pagination .swiper-pagination-bullet:nth-child(3):before {
+  background-image: url("../images/main/service_icon03.png");
+}
+
+#elearning .pagination .swiper-pagination-bullet:nth-child(4):before {
+  background-image: url("../images/main/service_icon04.png");
+}
+
+#elearning .pagination .swiper-pagination-bullet:nth-child(5):before {
+  background-image: url("../images/main/service_icon05.png");
+}
+
+#elearning .pagination .swiper-pagination-bullet:nth-child(6):before {
+  background-image: url("../images/main/service_icon06.png");
+}
+
+#elearning .pagination .swiper-pagination-bullet:before {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 20px;
+  border: 1px solid #999;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  transition: all 0.5s ease-in-out;
+  content: "";
+  border-radius: 100px;
+  background-color: #fff;
+}
+
+#elearning .pagination .swiper-pagination-bullet-active:before {
+  border-color: #0f91d0;
+  background-color: #0f91d0;
+}
+
+#elearning .pagination .swiper-pagination-bullet:nth-child(1).swiper-pagination-bullet-active:before {
+  background-image: url("../images/main/service_icon01_up.png");
+}
+
+#elearning .pagination .swiper-pagination-bullet:nth-child(2).swiper-pagination-bullet-active:before {
+  background-image: url("../images/main/service_icon02_up.png");
+}
+
+#elearning .pagination .swiper-pagination-bullet:nth-child(3).swiper-pagination-bullet-active:before {
+  background-image: url("../images/main/service_icon03_up.png");
+}
+
+#elearning .pagination .swiper-pagination-bullet:nth-child(4).swiper-pagination-bullet-active:before {
+  background-image: url("../images/main/service_icon04_up.png");
+}
+
+#elearning .pagination .swiper-pagination-bullet:nth-child(5).swiper-pagination-bullet-active:before {
+  background-image: url("../images/main/service_icon05_up.png");
+}
+
+#elearning .pagination .swiper-pagination-bullet:nth-child(6).swiper-pagination-bullet-active:before {
+  background-image: url("../images/main/service_icon06_up.png");
+}
+
+#elearning .rolling {
+  position: relative;
+  overflow: hidden;
+  margin-top: 100px;
+}
+
+#elearning .rolling .list > li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+#elearning .rolling .list > li .desc {
+  flex-basis: 45%;
+}
+
+#elearning .rolling .list > li .desc .btns {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#elearning .rolling .list > li .desc h3 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+#elearning .rolling .list > li .desc p {
+  font-size: 18px;
+  line-height: 1.75;
+  word-break: keep-all;
+}
+
+#elearning .rolling .list > li .desc .hashTag {
+  display: flex;
+  margin-top: 20px;
+  font-size: 18px;
+  color: #0f91d0;
+}
+
+#elearning .rolling .list > li .desc .hashTag li {
+  margin-right: 15px;
+}
+
+#elearning .rolling button {
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  top: 50%;
+  z-index: 3;
+  color: #ccc;
+  border: none;
+  transform: translateY(-50%);
+  background: #fff;
+  border-radius: 100px;
+}
+
+#elearning .rolling button .material-icons {
+  font-weight: 700;
+}
+
+#elearning .rolling button.prev {
+  left: 10px;
+  box-shadow: -5px 0px 10px #eee;
+}
+
+#elearning .rolling button.next {
+  right: 10px;
+  box-shadow: 5px 0px 10px #eee;
+}
+
+#solution {
+  background-color: #eff6f8;
+}
+
+#solution .lmsWrap {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+#solution .lmsWrap .title a {
+  display: block;
+  height: 280px;
+  background-color: #ddecf0;
+  position: relative;
+}
+
+#solution .lmsWrap .title a h3 {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+#solution .lmsWrap .title a h3 .eng {
+  display: block;
+}
+
+#solution .lmsWrap .title a .arrow {
+  position: absolute;
+  left: 50px;
+  top: 150px;
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  background: #0f91d0;
+  background: linear-gradient(45deg, #0f91d0 0%, #4bd00f 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#solution .lmsWrap .title a .arrow:before {
+  content: "\e5c8";
+  font-family: "Material Icons";
+  color: #fff;
+}
+
+#solution .lmsWrap li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 280px;
+  background-color: #fff;
+  text-align: center;
+}
+
+#solution .lmsWrap li a:before {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 30px;
+  border: 1px solid #ddd;
+  transition: all 0.25s ease-in-out;
+  content: "";
+  border-radius: 100%;
+  background-position: 50% 50%;
+  background-color: #fff;
+  background-repeat: no-repeat;
+}
+
+#solution .lmsWrap li a:hover:before {
+  border-color: #0f91d0;
+}
+
+#solution .lmsWrap li a h4 {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+#solution .lmsWrap li a span {
+  color: #0f91d0;
+  border-bottom: 1px solid #0f91d0;
+}
+
+#solution .lmsWrap li:after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 100%;
+  border-right: 1px dashed #cce2e8;
+  top: 0;
+}
+
+#solution .lmsWrap li:nth-child(1):after {
+  display: none;
+}
+
+#solution .lmsWrap:nth-child(1) .lmsBox {
+  width: 100%;
+}
+
+#solution .lmsWrap:nth-child(1) .title {
+  width: 20%;
+}
+
+#solution .lmsWrap:nth-child(1) ul {
+  width: 80%;
+}
+
+#solution .lmsWrap:nth-child(1) ul li {
+  width: 25%;
+}
+
+#solution .lmsWrap:nth-child(1) ul li:nth-child(1) a:before {
+  background-image: url("../images/main/solution_img01.png");
+}
+
+#solution .lmsWrap:nth-child(1) ul li:nth-child(1) a:hover:before {
+  background-image: url("../images/main/solution_img01_up.png");
+}
+
+#solution .lmsWrap:nth-child(1) ul li:nth-child(2) a:before {
+  background-image: url("../images/main/solution_img01.png");
+}
+
+#solution .lmsWrap:nth-child(1) ul li:nth-child(2) a:hover:before {
+  background-image: url("../images/main/solution_img01_up.png");
+}
+
+#solution .lmsWrap:nth-child(1) ul li:nth-child(3) a:before {
+  background-image: url("../images/main/solution_img01.png");
+}
+
+#solution .lmsWrap:nth-child(1) ul li:nth-child(3) a:hover:before {
+  background-image: url("../images/main/solution_img01_up.png");
+}
+
+#solution .lmsWrap:nth-child(1) ul li:nth-child(4) a:before {
+  background-image: url("../images/main/solution_img01.png");
+}
+
+#solution .lmsWrap:nth-child(1) ul li:nth-child(4) a:hover:before {
+  background-image: url("../images/main/solution_img01_up.png");
+}
+
+#solution .lmsWrap:nth-child(1) ul li:nth-child(5) a:before {
+  background-image: url("../images/main/solution_img01.png");
+}
+
+#solution .lmsWrap:nth-child(1) ul li:nth-child(5) a:hover:before {
+  background-image: url("../images/main/solution_img01_up.png");
+}
+
+#solution .lmsWrap:nth-child(2) .lmsBox:nth-child(1) {
+  width: 60%;
+}
+
+#solution .lmsWrap:nth-child(2) .lmsBox:nth-child(1) .title {
+  width: 33.33%;
+}
+
+#solution .lmsWrap:nth-child(2) .lmsBox:nth-child(1) ul {
+  width: 66.66%;
+}
+
+#solution .lmsWrap:nth-child(2) .lmsBox:nth-child(1) ul li {
+  width: 50%;
+}
+
+#solution .lmsWrap:nth-child(2) .lmsBox:nth-child(1) ul li:nth-child(1) a:before {
+  background-image: url("../images/main/solution_img01.png");
+}
+
+#solution .lmsWrap:nth-child(2) .lmsBox:nth-child(1) ul li:nth-child(2) a:before {
+  background-image: url("../images/main/solution_img01.png");
+}
+
+#solution .lmsWrap:nth-child(2) .lmsBox:nth-child(1) ul li:nth-child(1) a:hover:before {
+  background-image: url("../images/main/solution_img01_up.png");
+}
+
+#solution .lmsWrap:nth-child(2) .lmsBox:nth-child(1) ul li:nth-child(2) a:hover:before {
+  background-image: url("../images/main/solution_img01_up.png");
+}
+
+#solution .lmsWrap:nth-child(2) .lmsBox:nth-child(2) {
+  width: 40%;
+}
+
+#solution .lmsWrap:nth-child(2) .lmsBox:nth-child(2) .title {
+  width: 50%;
+}
+
+#solution .lmsWrap:nth-child(2) .lmsBox:nth-child(2) ul {
+  width: 50%;
+}
+
+#solution .lmsWrap:nth-child(2) .lmsBox:nth-child(2) ul li {
+  width: 100%;
+}
+
+#solution .lmsWrap:nth-child(2) .lmsBox:nth-child(2) ul li:nth-child(1) a:before {
+  background-image: url("../images/main/solution_img01.png");
+}
+
+#solution .lmsWrap:nth-child(2) .lmsBox:nth-child(2) ul li:nth-child(1) a:hover:before {
+  background-image: url("../images/main/solution_img01_up.png");
+}
+
+#solution .lmsWrap .lmsBox {
+  display: flex;
+}
+
+#solution .lmsWrap .lmsBox ul {
+  display: flex;
+  position: relative;
+}
+
+#solution .lmsWrap .lmsBox img {
+  position: absolute;
+  bottom: 30px;
+  right: 45px;
 }

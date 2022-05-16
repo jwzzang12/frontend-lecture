@@ -36,74 +36,92 @@ a {
     height: 450px;
     background-color: rgba(255, 255, 255, 0.8);
     color: rgb(80, 80, 80);
-  }
-}
-#logo {
-  position: absolute;
-  left: 50px;
-  top: -10px;
-  height: 100px;
-  display: flex;
-  align-items: center;
-}
-#gnb {
-  .list {
-    display: flex;
-    justify-content: center;
-    white-space: nowrap;
-    .depth01 {
-      font-size: 18px;
-      font-weight: 600;
-      display: flex;
-      align-items: center;
-      padding: 0 60px;
-      height: 100px;
-      position: relative;
-      transition: color 0.1s;
-      &:after {
-        @include pseudo;
-        background-color: $sub-color;
-        left: 45px;
-        right: 45px;
-        bottom: 0;
-        height: 4px;
-        transform: scaleX(0);
-        transition: transform 0.25s ease-in-out;
-      }
-      &:hover:after {
-        transform: scaleX(1);
+    #logo {
+      img {
+        filter: brightness(30%);
       }
     }
-    .depth02 {
-      padding-left: 70px;
-      padding-top: 10px;
-      color: rgb(80, 80, 80);
-      li {
-        font-size: 15px;
-        margin-top: 15px;
-        &:before {
-          content: "\2012";
-          margin-left: -20px;
-          margin-right: 5px;
+  }
+  #logo {
+    position: absolute;
+    left: 50px;
+    top: -10px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+  }
+  #gnb {
+    .list {
+      display: flex;
+      justify-content: center;
+      white-space: nowrap;
+      .depth01 {
+        font-size: 18px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        padding: 0 60px;
+        height: 100px;
+        position: relative;
+        transition: color 0.1s;
+        &:after {
+          @include pseudo;
+          background-color: $sub-color;
+          left: 45px;
+          right: 45px;
+          bottom: 0;
+          height: 4px;
+          transform: scaleX(0);
+          transition: transform 0.25s ease-in-out;
+        }
+        &:hover:after {
+          transform: scaleX(1);
+        }
+      }
+      .depth02 {
+        padding-left: 70px;
+        padding-top: 10px;
+        color: rgb(80, 80, 80);
+        li {
+          font-size: 15px;
+          margin-top: 15px;
+          &:before {
+            content: "\2012";
+            margin-left: -20px;
+            margin-right: 5px;
+          }
         }
       }
     }
   }
-}
-#sns {
-  position: absolute;
-  right: 100px;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  span {
-    font-size: 45px;
+  #sns {
+    position: absolute;
+    right: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    span {
+      font-size: 45px;
+    }
+  }
+  #menu {
+    position: absolute;
+    right: 50px;
+    height: 100px;
+    display: flex;
+    align-items: center;
   }
 }
-#menu {
-  position: absolute;
-  right: 50px;
-  height: 100px;
-  display: flex;
-  align-items: center;
+#footer {
+  .client {
+    display: flex;
+    height: 200px;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #666;
+    .list {
+      width: 300px;
+    }
+  }
 }
