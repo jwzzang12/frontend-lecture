@@ -9,38 +9,38 @@ h1 {
 }
 
 a {
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
 }
 
 #header {
-  width: 100%;
   display: flex;
   justify-content: space-evenly;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  width: 100%;
   height: 100px;
-  overflow: hidden;
   position: absolute;
   z-index: 5;
+  overflow: hidden;
   color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   transition: all 0.5s 0s;
 }
 
 #header:after {
+  width: 100%;
+  height: 1px;
+  top: 100px;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.3);
   content: "";
   display: block;
   position: absolute;
-  width: 100%;
-  height: 1px;
-  background-color: rgba(255, 255, 255, 0.3);
-  top: 100px;
-  z-index: 2;
 }
 
 #header:hover {
   height: 450px;
-  background-color: rgba(255, 255, 255, 0.8);
   color: #505050;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 #header:hover #logo img {
@@ -48,12 +48,12 @@ a {
 }
 
 #header #logo {
-  position: absolute;
-  left: 50px;
-  top: -10px;
-  height: 100px;
   display: flex;
   align-items: center;
+  height: 100px;
+  position: absolute;
+  top: -10px;
+  left: 50px;
 }
 
 #header #gnb .list {
@@ -63,27 +63,27 @@ a {
 }
 
 #header #gnb .list .depth01 {
-  font-size: 18px;
-  font-weight: 600;
   display: flex;
   align-items: center;
-  padding: 0 60px;
   height: 100px;
   position: relative;
+  padding: 0 60px;
+  font-size: 18px;
+  font-weight: 600;
   transition: color 0.1s;
 }
 
 #header #gnb .list .depth01:after {
+  height: 4px;
+  right: 45px;
+  bottom: 0;
+  left: 45px;
+  transform: scaleX(0);
+  transition: transform 0.25s ease-in-out;
+  background-color: #0c4fa7;
   content: "";
   display: block;
   position: absolute;
-  background-color: #0c4fa7;
-  left: 45px;
-  right: 45px;
-  bottom: 0;
-  height: 4px;
-  transform: scaleX(0);
-  transition: transform 0.25s ease-in-out;
 }
 
 #header #gnb .list .depth01:hover:after {
@@ -91,28 +91,28 @@ a {
 }
 
 #header #gnb .list .depth02 {
-  padding-left: 70px;
   padding-top: 10px;
+  padding-left: 70px;
   color: #505050;
 }
 
 #header #gnb .list .depth02 li {
-  font-size: 15px;
   margin-top: 15px;
+  font-size: 15px;
 }
 
 #header #gnb .list .depth02 li:before {
-  content: "\2012";
-  margin-left: -20px;
   margin-right: 5px;
+  margin-left: -20px;
+  content: "\2012";
 }
 
 #header #sns {
-  position: absolute;
-  right: 100px;
-  height: 100px;
   display: flex;
   align-items: center;
+  height: 100px;
+  position: absolute;
+  right: 100px;
 }
 
 #header #sns span {
@@ -120,22 +120,87 @@ a {
 }
 
 #header #menu {
-  position: absolute;
-  right: 50px;
-  height: 100px;
   display: flex;
   align-items: center;
+  height: 100px;
+  position: absolute;
+  right: 50px;
 }
 
 #footer .client {
   display: flex;
-  height: 200px;
   justify-content: space-between;
   align-items: center;
+  height: 200px;
   border-top: 1px solid #666;
   border-bottom: 1px solid #666;
 }
 
 #footer .client .list {
   width: 300px;
+}
+
+#footer .utilMenu .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 200px;
+}
+
+#footer .utilMenu .container .addressBox {
+  color: #666;
+}
+
+#footer .utilMenu .container .addressBox .logo {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+#footer .utilMenu .container .addressBox .address {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+#footer .utilMenu .container .addressBox .address span:after {
+  display: inline-block;
+  width: 3px;
+  height: 10px;
+  content: "";
+  background-color: #ddd;
+  margin: 0 10px;
+}
+
+#footer .utilMenu .container .addressBox .address span:nth-child(3):after {
+  display: none;
+}
+
+#footer .utilMenu .container .addressBox .copyright {
+  font-size: 16px;
+  font-weight: 200;
+}
+
+#footer .utilMenu .container .info {
+  font-size: 18px;
+  color: #444;
+}
+
+#footer .utilMenu .container .info span:after {
+  display: inline-block;
+  width: 3px;
+  height: 10px;
+  content: "";
+  background-color: #ddd;
+  margin: 0 10px;
+}
+
+#footer .utilMenu .container .info span strong {
+  font-weight: 700;
+  color: #0c4fa7;
+}
+
+#footer .utilMenu .container .info select {
+  padding: 10px;
+  width: 200px;
+  font-size: 18px;
+  border-radius: 5px;
 }
