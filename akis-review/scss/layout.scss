@@ -176,10 +176,14 @@ a {
           }
         }
         select {
+          color: #777;
           padding: 10px;
           width: 200px;
           font-size: 18px;
-          border-radius: 5px;
+          border: {
+            radius: 5px;
+            color: #ddd;
+          }
         }
       }
     }
